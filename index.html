@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Johnson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <header>
+    <div class="wrapper">
+      <a href="#" class="logo"><img src="assets/icons/logo.png" alt="image-logo"></a>
+      <nav class="nav nav--primary" data-visible="false">
+        <ul role="list">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="btn-open"><img src="assets/icons/hamburger-menu-svgrepo-com(1).svg" alt=""></button>
+      <button class="btn-close"><img src="assets/icons/close-square-svgrepo-com.svg" alt=""></button>
+    </div>
+  </header>
+    <main>
+        <section class="hero">
+            <video src="assets/videos/video-bg.mp4" autoplay muted loop></video>
+            <div class="wrapper grid-2-cols">
+                <div class="hero-col-1">
+                    <div>
+                        <h2>Mark Johnson</h2>
+                        <h1>FRONT END WEB DEVELOPER</h1>
+                        <p>Hi! My name is Mark Johnson and I am a web developer specialized in building modern,
+                             responsive websites using
+                             technologies like HTML, CSS, JavaScript, Tailwind CSS, and React.js.</p>
+                    </div>
+                    <div class="hero-buttons-group">
+                        <a href="#contact" class="btn btn--primary">Contact Me</a>
+                        <a href="https://github.com/MJ93webdev?tab=repositories" class="btn btn--secondary">GitHub</a>
+                    </div>
+                </div>
+                <div class="hero-col-2">
+                    <img src="assets/images/hero-img-shadow.png" alt="Image of Mark Johnson">
+                </div>
+            </div>
+            <div class="tech">
+                <img src="assets/icons/html-5-svgrepo-com(1).svg" alt="logo-html">
+                <img src="assets/icons/css-3-svgrepo-com(1).svg" alt="logo-css">
+                <img src="assets/icons/js-official-svgrepo-com.svg" alt="logo-js">
+                <img src="assets/icons/react-svgrepo-com(1).svg" alt="logo-react">
+                <img src="assets/icons/tailwind-svgrepo-com(1).svg" alt="logo-tailwind">
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="wrapper">
+
+                <div class="projects-heading">
+                    <h2>Projects</h2>
+                    <p>Check Out Some Of My Projects</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project">
+                        <a href="https://shiny-bubblegum-4423c8.netlify.app/">
+                            <img src="assets/images/architects-ss-desktop.PNG" alt="">
+                        </a>
+                    </div>
+                    <div class="project">
+                        <a href="https://tangerine-donut-3cbd74.netlify.app">
+                            <img src="assets/images/bookmark-ss-desktop.PNG" alt="">
+                        </a>
+                    </div>
+                    <div class="project">
+                        <a href="https://calm-sprinkles-ab954d.netlify.app">
+                            <img src="assets/images/cobuildpageSS_desktop.png" alt="">
+                        </a>
+                    </div>
+                    <div class="project">
+                        <a href="https://wonderful-horse-982263.netlify.app">
+                            <img src="assets/images/manage-ss-desktop.PNG" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <a href="https://github.com/MJ93webdev?tab=repositories" class="see-more-link">Github Page</a>
+
+            </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <div class="wrapper">
+                    <h2>Lets Work Together</h2>
+                    <div class="email">
+                        <h3>Email me at <br> markjohnson.webdev@gmail.com</h3>
+                        <p>or</p>
+                    </div>
+                    <!-- FORM -->
+                     
+                        <form
+                        name="contact"
+                        method="POST"
+                        data-netlify="true"
+                        >
+                        <input type="hidden" name="form-name" value="contact">
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Your email"
+                            required
+                        >
+
+                        <textarea
+                            name="message"
+                            placeholder="Your message"
+                            required
+                        ></textarea>
+
+                        <button class="btn btn--primary" type="submit">Send</button>
+                        </form>
+
+                    
+
+                </div>
+            </section>
+
+    </main>
+    <footer>
+        <div class="wrapper">
+            <a class="link-logo" href="/"><img src="assets/icons/logo.png" alt=""></a>
+            <ul role="list" class="nav nav--secondary">
+                <li><a href="/">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <p>© 2026 Mark Johnson - All rights reserved</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
